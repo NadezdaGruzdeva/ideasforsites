@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a>Gradient</a>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      a {
+        background: linear-gradient(to right, transparent, transparent),
+          linear-gradient(to right, #ff0000, #fff200, #1e9600);
+        background-size: 100% 3px, 0 3px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms;
+      }
+      a:hover {
+        background-size: 0 3px, 100% 3px;
+      }
+    </style>
+    <script></script>
+  </body>
+</html>
