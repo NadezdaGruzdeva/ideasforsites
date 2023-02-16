@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 0.64em;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+      .glogo {
+        position: relative;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        border-left: 40px solid #f4c20d;
+        border-right: 40px solid #4885ed;
+        border-top: 40px solid #db3236;
+        border-bottom: 40px solid #3cba54;
+      }
+      .glogo:before {
+        content: "";
+        position: absolute;
+        top: -150px;
+        right: -150px;
+        border-top: 110px solid transparent;
+        border-right: 110px solid #fff;
+        border-left: 110px solid transparent;
+        border-bottom: 110px solid transparent;
+        transform: rotate(90deg);
+      }
+      .glogo:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -45px;
+        width: 110px;
+        height: 40px;
+        background: #4384f5;
+        transform: translate(-5px, -20px);
+        border-bottom-right-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glogo"></div>
+
+    <script></script>
+  </body>
+</html>
